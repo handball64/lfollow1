@@ -1,14 +1,16 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="sensor_line" id="24" x="103" y="16">
-    <field name="LINE">MIDDLE</field>
-  </block>
-  <block type="controls_whileUntil" id="17" inline="false" x="94" y="48">
+  <block type="controls_whileUntil" id="2" inline="false" x="94" y="48">
     <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_line" id="1">
+        <field name="LINE">MIDDLE</field>
+      </block>
+    </value>
     <statement name="DO">
-      <block type="oled_color" id="81">
+      <block type="oled_color" id="3">
         <field name="OBJECT">BLACK</field>
         <next>
-          <block type="movement_forward" id="1"></block>
+          <block type="movement_forward" id="4"></block>
         </next>
       </block>
     </statement>
