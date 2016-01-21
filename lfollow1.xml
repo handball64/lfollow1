@@ -7,7 +7,12 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="1"></block>
+      <block type="oled_color" id="81">
+        <field name="OBJECT">BLACK</field>
+        <next>
+          <block type="movement_forward" id="1"></block>
+        </next>
+      </block>
     </statement>
   </block>
 </xml>
