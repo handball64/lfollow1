@@ -1,15 +1,16 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="23" inline="true" x="196" y="50">
-    <value name="TIMES">
-      <block type="math_number" id="50">
-        <field name="NUM">100000</field>
+  <block type="controls_whileUntil" id="229" inline="false" x="178" y="79">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_spectrometer" id="265">
+        <field name="LIGHT">IR880</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="33"></block>
+      <block type="movement_forward" id="275"></block>
     </statement>
     <next>
-      <block type="movement_stop" id="43"></block>
+      <block type="movement_stop" id="285"></block>
     </next>
   </block>
 </xml>
